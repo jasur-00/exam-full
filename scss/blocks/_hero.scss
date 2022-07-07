@@ -1,0 +1,150 @@
+.hero {
+  padding-bottom: 75px;
+  background-color: #EDF3F8;
+  background-image: url(../../img/hero-circle.png);
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position: calc(50% + 350px) -310px
+}
+
+.hero__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__title {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536B;
+  width: 546px;
+  margin: 0;
+}
+
+.hero__adress {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.user__input {
+  background: #FBFCFE;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+  padding: 15px 25px;
+  width: 400px;
+  margin-top: 25px;
+  position: relative;
+  outline: none;
+}
+
+.hero__button {
+  margin-left: -176.5px;
+  border-radius: 200px;
+  margin-bottom: 5px;
+  position: absolute;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C8294;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.hero__img {
+  width: 263px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+@include breakpoint-down (830px) {
+  .hero__box {
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .hero__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;   
+    text-align: center;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+}
+
+@include breakpoint-down (705px) {
+  .hero {
+    background-color: #EDF3F8;
+    background-image: url(../../img/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: 780px;
+    background-position: calc(50% + 0px) -510px
+  }
+
+  .hero__box-mini {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero__adress {
+    margin-left: 25px;
+  }
+}
+
+@include breakpoint-down (545px) {
+  .hero__box {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .user__input {
+    display: block;
+    width: 350px;
+  }
+
+  .hero__button {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 15px 50px;
+    width: 290px;
+    margin-top: 16px;
+  }
+}
+
+@include breakpoint-down (445px) {
+  .hero__title {
+    width: 280px;
+  }
+
+  .user__input {
+    width: 230px;
+  }
+
+  .hero__button {
+    width: 280px;
+  }
+}

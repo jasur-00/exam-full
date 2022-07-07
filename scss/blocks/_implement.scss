@@ -1,0 +1,75 @@
+.implement {
+  background-color:  #edf3f8;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.implement__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.complement-img {
+  width: 445px;
+  height: 284px;
+  border-radius: 5px;
+}
+
+.implement__box-title {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;  
+  letter-spacing: -0.369231px;
+  color: #36536B;
+  width: 445px;
+  margin: 0;
+}
+
+.implement__box-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  width: 445px;
+}
+
+@include breakpoint-down (950px) {
+  .implement {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .implement__box {
+    flex-direction: column;
+  }
+
+  .implement__box-pic {
+    margin-bottom: 48px;
+  }
+
+  .implement__box-title {
+    text-align: center;
+  }
+
+  .implement__box-text {
+    text-align: center;
+  }
+}
+
+@include breakpoint-down (470px) {
+  .implement-img {
+    width: 300px;
+    height: 170px;
+  }
+
+  .implement__box-title {
+    width: 280px;
+  }
+
+  .implement__box-text {
+    width: 280px;
+  }
+}

@@ -1,0 +1,54 @@
+.header {
+  background-color: #edf3f8;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-image: url(../../img/hero-circle.png);
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position: calc(50% + 350px) -110px;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.header__box-mini {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header__chackbox-link {
+  display: none;
+}
+
+@include breakpoint-down (705px) {
+  .header__chackbox-link {
+    display: inline-block;
+  }
+
+  .header {
+    background-color: #edf3f8;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url(../../img/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: 780px;
+    background-position: calc(50% + 0px) -220px;
+  }
+
+  .header__button {
+    display:none;
+  }
+}
+
+@include breakpoint-down (545px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+

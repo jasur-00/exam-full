@@ -1,0 +1,28 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__items {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin-right: 40px;
+}
+
+.nav__items:hover {
+  color: #030303;
+  cursor: pointer;
+}
+
+@include breakpoint-down (705px) {
+  .nav__list {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+}
+
+.logo__img {
+  display: block;
+  margin: 0;
+  width: 135px;
+  height: 38px;
+  transition: transform 1s ease;
+}
+
+.logo__img:hover {
+  transform: scale(1.4)
+}
+

@@ -1,0 +1,79 @@
+.start {
+  background-color: #edf3f8;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.start__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start__adress {
+  display: flex;
+  align-items: center;
+}
+
+.start__title {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+}
+
+.user__input {
+  position: relative;
+  margin-top: 0;
+}
+
+.start__button {
+  position: absolute;
+  margin-left: -160px;
+  border-radius: 200px;
+  margin-bottom: 5px;
+}
+
+@include breakpoint-down (815px) {
+  .start {
+    padding-top: 40px;
+  }
+
+  .start__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down (550px) {
+  .start {
+    padding-top: 20px;
+  }
+  
+  .start__adress {
+    display: flex;
+    align-items: center;
+  }
+
+  .start__title {
+    width: 280px;
+    text-align: center;
+  }
+
+  .user__input {
+    display: block;
+    width: 230px;
+    outline: none;
+  }
+
+  .start__button {
+    display: block;
+    width: 280px;
+    margin: 0;
+    margin-top: 16px;
+  }
+}
