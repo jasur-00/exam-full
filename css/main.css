@@ -503,7 +503,12 @@ body {
   margin-right: 40px;
 }
 
-.nav__items:hover {
+.nav__link {
+  text-decoration: none;
+  color: #36536B;
+}
+
+.nav__link:hover {
   color: #030303;
   cursor: pointer;
 }
@@ -780,7 +785,7 @@ body {
     background-image: url(../../img/intro-bg-img.png);
     background-repeat: no-repeat;
     background-size: 780px;
-    background-position: calc(50% - 0px) -450px;
+    background-position: calc(50% - 0px) -570px;
   }
 
   .intro__box {
@@ -1185,7 +1190,7 @@ body {
   }
 
   .services__items {
-    margin-left: -10px;
+    margin-left: -30px;
   }
 
   .services__title {
@@ -1394,7 +1399,7 @@ body {
     background-image: url(../../img/footer-bg-img.png);
     background-repeat: no-repeat;
     background-size: 780px;
-    background-position: calc(50% + 0px) 145px;
+    background-position: calc(50% + 10px) 145px;
   }
 
   .footer__box {
